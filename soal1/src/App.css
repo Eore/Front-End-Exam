@@ -16,9 +16,13 @@
 	border: 1px solid;
 	border-color: transparent #dee2e6 #dee2e6 #dee2e6;
 	width: 300px;
-	height: 150px;
+	height: 160px;
 }
 
 .render {
 	padding: 20px;
+}
+
+.render > a {
+	margin-top: 10px;
 }
