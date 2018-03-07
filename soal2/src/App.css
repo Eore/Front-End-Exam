@@ -1,3 +1,8 @@
+body {
+	background: url('https://chargervoice.com/wp-content/uploads/2018/01/99.jpg') no-repeat fixed;
+	background-size: cover;
+}
+
 .form-group {
 	width: 50%;
 	display: flex;
@@ -7,17 +12,22 @@
 }
 
 .form-group > h1 {
+	color: white;
 	text-align: center;
 	width: 100%;
+	margin: 20px;
 }
 
 .form-group > input {
+	margin-right: 20px;
 	width: 80%;
 }
 
 .list-container {
+	background-color: white;
 	width: 80%;
 	margin: 20px auto;
+	border-radius: 5px;
 }
 
 .list-container > h4 {
@@ -38,4 +48,5 @@
 
 .list-container > div > p {
 	margin-left: 20px;
+	width: 80%;
 }

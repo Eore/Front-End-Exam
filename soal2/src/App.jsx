@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import List from './List';
+import List from './components/List';
 import './App.css';
 
 export default class App extends React.Component {
@@ -19,11 +19,8 @@ export default class App extends React.Component {
 		<div id="app">
 			<div className="form-group">
 				<h1>{`Daftar Pemain ${this.state.search}`}</h1>
-				<input className="form-control" type="text" ref="search"/>
-				<button onClick={() => {
-					this.setState({search: this.refs.search.value})
-					this.getData(this.refs.search.value);
-				}} className="btn btn-success">Lihat Daftar</button>
+				<input onChange={() => this.setState({search: this.refs.search.value})}className="form-control" type="text" ref="search"/>
+				<button onClick={() => this.getData(this.refs.search.value)} className="btn btn-success">Lihat Daftar</button>
 			</div>
 			<div id="display">
 				{this.state.data.map(x => <List key={x.idPlayer} {...x}/>)}
